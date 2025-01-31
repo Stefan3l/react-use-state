@@ -16,7 +16,8 @@
   width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .acordeon {
@@ -30,7 +31,14 @@
   justify-content: space-between;
   padding: 6px;
   border-bottom: 1px solid grey;
-  background-color: lightgray;
+}
+
+.acordeon-title.open {
+  background-color: yellow;
+}
+
+.acordeon-title.closed {
+  background-color: lightgrey;
 }
 
 .acordeon-title button {
